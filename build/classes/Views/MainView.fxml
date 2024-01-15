@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.MainViewController">
+   <content>
+      <VBox prefHeight="357.0" prefWidth="526.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Novo">
+                  <items>
+                        <Menu mnemonicParsing="false" text="Produtos">
+                          <items>
+                              <MenuItem fx:id="novoProd" mnemonicParsing="false" onAction="#onNovoProdAction" text="Cadastrar" />
+                              <MenuItem fx:id="novoConsulta" mnemonicParsing="false" onAction="#onNovoConsultaAction" text="Consultar" />
+                              <MenuItem fx:id="novoCxPallet" mnemonicParsing="false" onAction="#onNovoCxPallet" text="Cx.Pallet" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Endereçamento">
+                          <items>
+                              <MenuItem fx:id="enderecamento" mnemonicParsing="false" onAction="#onEnderecamentoAction" text="Novo" />
+                            <MenuItem fx:id="enderecamentoAlt" mnemonicParsing="false" onAction="#onEnderecamentoAlt" text="Alterar" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Endereço">
+                           <items>
+                              <MenuItem fx:id="novoCadRua" mnemonicParsing="false" onAction="#onNovoCadRua" text="Rua" />
+                              <MenuItem fx:id="novoCadPredio" mnemonicParsing="false" onAction="#onNovoCadPredio" text="Prédio" />
+                              <MenuItem fx:id="novoExluir" mnemonicParsing="false" onAction="#onNovoEndExluir" text="Excluir" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Fornecedor">
+                          <items>
+                            <MenuItem fx:id="novoFornecedor" mnemonicParsing="false" onAction="#onNovoFornecedor" text="Novo" />
+                          </items>
+                        </Menu>
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Lista">
+                    <items>
+                        <MenuItem fx:id="novaLista" mnemonicParsing="false" onAction="#onNovaListaAction" text="Separação" />
+                        <MenuItem fx:id="novoInventario" mnemonicParsing="false" onAction="#onNovoInventario" text="Inventário" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Relatórios">
+                  <items>
+                    <MenuItem fx:id="relatorioEnderecamento" mnemonicParsing="false" onAction="#relatorioEnderecamento" text="Endereçamento" />
+                        <MenuItem fx:id="relatorioExpEnderecamento" mnemonicParsing="false" onAction="#relatorioExpEnderecamento" text="Exportar Endereçamento" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Importar">
+                     <items>
+                        <MenuItem fx:id="importCsv" mnemonicParsing="false" onAction="#onImportCsvAction" text="Cadastro produtos" />
+                        <MenuItem fx:id="attEstoque" mnemonicParsing="false" onAction="#onAttEstoqueAction" text="Atualizar Estoque" />
+                        <MenuItem fx:id="importFornecedor" mnemonicParsing="false" onAction="#onImportFornecedor" text="Fornecedor" />
+                     </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Configurações">
+                    <items>
+                      <MenuItem fx:id="config" mnemonicParsing="false" onAction="#onConfig" text="Configurações" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

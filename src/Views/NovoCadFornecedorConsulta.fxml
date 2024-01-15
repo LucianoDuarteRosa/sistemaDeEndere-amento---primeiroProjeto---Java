@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tbResult" layoutX="13.0" layoutY="7.0" prefHeight="352.0" prefWidth="385.0">
+        <columns>
+          <TableColumn fx:id="tbRazaoSocial" prefWidth="250.0" text="Fornecedor" />
+          <TableColumn fx:id="tbCNPJ" minWidth="0.0" prefWidth="134.0" text="CNPJ" />
+            <TableColumn fx:id="tbId" minWidth="0.0" prefWidth="0.0" text="Id" visible="false" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnCancelar" layoutX="233.0" layoutY="368.0" mnemonicParsing="false" onAction="#onBtnCancelar" prefHeight="25.0" prefWidth="121.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnSelecionar" layoutX="47.0" layoutY="368.0" mnemonicParsing="false" onAction="#btnSelecionar" prefHeight="25.0" prefWidth="121.0" text="Selecionar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

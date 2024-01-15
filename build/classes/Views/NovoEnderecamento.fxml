@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="266.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.NovoEnderecamentoController">
+   <children>
+      <TextField fx:id="txtCodInt" alignment="CENTER" layoutX="22.0" layoutY="14.0" prefHeight="25.0" prefWidth="109.0" promptText="Código interno" />
+      <TextField fx:id="txtCodBarras" alignment="CENTER" layoutX="142.0" layoutY="14.0" prefHeight="25.0" prefWidth="149.0" promptText="Código de barras" />
+      <Button fx:id="btnConsultar" layoutX="300.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBtnConsultarAcion" prefHeight="25.0" prefWidth="95.0" text="Pesquisar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnConsulta" layoutX="414.0" layoutY="14.0" mnemonicParsing="false" onAction="#onConsulta" prefHeight="25.0" prefWidth="109.0" text="Consultar Desc.">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtCodIntResult" alignment="CENTER" editable="false" focusTraversable="false" layoutX="24.0" layoutY="67.0" prefHeight="25.0" prefWidth="72.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDescResult" editable="false" focusTraversable="false" layoutX="139.0" layoutY="67.0" prefHeight="25.0" prefWidth="282.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtQntMinVendaResult" alignment="CENTER" editable="false" focusTraversable="false" layoutX="461.0" layoutY="67.0" prefHeight="25.0" prefWidth="62.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="22.0" layoutY="120.0" text="Tonalidade">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="162.0" text="Bitola">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTon" layoutX="96.0" layoutY="116.0" />
+      <TextField fx:id="txtBit" layoutX="96.0" layoutY="158.0" />
+      <Label layoutX="309.0" layoutY="120.0" text="Rua">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="162.0" text="Prédio">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRua" layoutX="374.0" layoutY="116.0" />
+      <TextField fx:id="txtPredio" layoutX="374.0" layoutY="158.0" />
+      <TextField fx:id="txtObserv" alignment="CENTER" layoutX="20.0" layoutY="196.0" prefHeight="25.0" prefWidth="298.0" promptText="Observaçao" />
+      <TextField fx:id="txtQuant" alignment="CENTER" layoutX="449.0" layoutY="196.0" prefHeight="25.0" prefWidth="63.0" />
+      <Button fx:id="btnAdicionar" layoutX="150.0" layoutY="235.0" mnemonicParsing="false" onAction="#onBtnAdicionarAcion" prefHeight="25.0" prefWidth="95.0" text="Adicionar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="307.0" layoutY="235.0" mnemonicParsing="false" onAction="#onBtnCancelarAction" prefHeight="25.0" prefWidth="95.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtCodBarrasResult" layoutX="264.0" layoutY="92.0" prefHeight="0.0" prefWidth="87.0" visible="false" />
+      <TextField fx:id="txtCodFabResult" layoutX="142.0" layoutY="92.0" prefHeight="9.0" prefWidth="72.0" visible="false" />
+      <TextField fx:id="txtFornecedorResult" layoutX="11.0" layoutY="92.0" prefHeight="25.0" prefWidth="63.0" visible="false" />
+      <Label layoutX="347.0" layoutY="200.0" text="Quant.de Pallets">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

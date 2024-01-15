@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.NovoEnderecamentoAltController">
+   <children>
+      <TextField fx:id="txtRua" alignment="CENTER" layoutX="90.0" layoutY="14.0" promptText="Rua" />
+      <TextField fx:id="txtPredio" alignment="CENTER" layoutX="295.0" layoutY="14.0" promptText="Prédio" />
+      <Button fx:id="btnBusca" layoutX="510.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBusca" prefHeight="25.0" prefWidth="112.0" text="Buscar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tabViewEnd" layoutX="8.0" layoutY="53.0" prefHeight="442.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="tabCodInt" prefWidth="55.0" text="Cód.Int" />
+          <TableColumn fx:id="tabDesc" prefWidth="231.0" text="Descriçao" />
+            <TableColumn fx:id="tabTon" minWidth="0.0" prefWidth="82.0" text="Ton" />
+            <TableColumn fx:id="tabBitola" prefWidth="42.0" text="Bit" />
+            <TableColumn fx:id="tabQntMinVenda" text="Qnt.Min.V" />
+            <TableColumn fx:id="tabCodFab" prefWidth="68.0" text="Cód.Fab" />
+            <TableColumn fx:id="tabObserv" prefWidth="141.0" text="Observação" />
+            <TableColumn fx:id="tabId" prefWidth="75.0" text="Id" visible="false" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtRuaNovo" alignment="CENTER" layoutX="8.0" layoutY="508.0" prefHeight="25.0" prefWidth="121.0" promptText="Digite nova rua" />
+      <TextField fx:id="txtPredioNovo" alignment="CENTER" layoutX="150.0" layoutY="508.0" prefHeight="25.0" prefWidth="121.0" promptText="Digite novo prédio" />
+      <Button fx:id="btnAlterar" layoutX="282.0" layoutY="508.0" mnemonicParsing="false" onAction="#onAlterar" prefHeight="25.0" prefWidth="98.0" text="Alterar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="610.0" layoutY="508.0" mnemonicParsing="false" onAction="#onCancelar" prefHeight="25.0" prefWidth="98.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemover" layoutX="495.0" layoutY="508.0" mnemonicParsing="false" onAction="#onRemover" prefHeight="25.0" prefWidth="98.0" text="Remover">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEditar" layoutX="392.0" layoutY="508.0" mnemonicParsing="false" onAction="#onEditar" prefHeight="25.0" prefWidth="87.0" text="Editar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

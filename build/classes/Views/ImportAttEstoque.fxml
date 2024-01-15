@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="146.0" prefWidth="353.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.ImportAttEstoqueController">
+   <children>
+      <Label layoutX="14.0" layoutY="23.0" text="Digite o caminho ou localize aqui:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="caminhoTxt" layoutX="14.0" layoutY="48.0" prefHeight="25.0" prefWidth="325.0" />
+      <Button fx:id="btnImportar" layoutX="63.0" layoutY="114.0" mnemonicParsing="false" onAction="#onImportarCsv" text="Importar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnCancelar" layoutX="225.0" layoutY="114.0" mnemonicParsing="false" onAction="#onBtnCancelar" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="85.0" prefHeight="17.0" prefWidth="119.0" text="CodInt, Estoque">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLocalizar" layoutX="243.0" layoutY="19.0" mnemonicParsing="false" onAction="#localizar" text="Localizar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

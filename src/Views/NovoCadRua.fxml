@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="91.0" prefWidth="231.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.NovoCadRuaController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Rua">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRua" layoutX="66.0" layoutY="10.0" />
+      <Button fx:id="btnAdicionar" layoutX="14.0" layoutY="57.0" mnemonicParsing="false" onAction="#onBtnAddAction" text="Adicionar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="141.0" layoutY="57.0" mnemonicParsing="false" onAction="#onBtnCancelarAction" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

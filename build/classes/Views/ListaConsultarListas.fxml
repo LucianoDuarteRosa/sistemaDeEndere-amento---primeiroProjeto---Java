@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="316.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtLista" layoutX="28.0" layoutY="14.0" prefHeight="25.0" prefWidth="102.0" promptText="Número da lista" />
+      <Button fx:id="btnConsulta" layoutX="190.0" layoutY="14.0" mnemonicParsing="false" onAction="#onConsulta" prefHeight="25.0" prefWidth="102.0" text="Consultar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tbResult" layoutX="14.0" layoutY="78.0" prefHeight="243.0" prefWidth="289.0">
+        <columns>
+          <TableColumn fx:id="tbId" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="tbNome" prefWidth="147.0" text="Nome" />
+            <TableColumn fx:id="tbDisponivel" prefWidth="92.0" text="Disponível" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSelecionar" layoutX="46.0" layoutY="326.0" mnemonicParsing="false" onAction="#onselect" prefHeight="25.0" prefWidth="86.0" text="Selecionar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="190.0" layoutY="326.0" mnemonicParsing="false" onAction="#onCancelar" prefHeight="25.0" prefWidth="86.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="checkFinal" layoutX="130.0" layoutY="50.0" mnemonicParsing="false" onAction="#onCheck" text="Finalizadas" />
+      <CheckBox fx:id="checkDisp" layoutX="14.0" layoutY="50.0" mnemonicParsing="false" onAction="#onCheck" selected="true" text="Disponíveis" />
+      <CheckBox fx:id="checkTodas" layoutX="241.0" layoutY="50.0" mnemonicParsing="false" onAction="#onCheck" text="Todas" />
+   </children>
+</AnchorPane>

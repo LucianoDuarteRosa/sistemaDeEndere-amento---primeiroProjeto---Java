@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="126.0" prefWidth="301.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.NovoCadPredioController">
+   <children>
+      <Label layoutX="20.0" layoutY="14.0" text="Rua" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="47.0" text="Prédio" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="btnAdd" layoutX="55.0" layoutY="93.0" mnemonicParsing="false" onAction="#onBtnAddAction" text="Adicionar">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnCancelar" layoutX="167.0" layoutY="93.0" mnemonicParsing="false" onAction="#onBtnCancelarAction" prefHeight="25.0" prefWidth="71.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="txtPredio" layoutX="122.0" layoutY="43.0" prefHeight="25.0" prefWidth="161.0" />
+      <ComboBox fx:id="comboBoxRua" layoutX="119.0" layoutY="10.0" onAction="#onComboBoxRua" prefHeight="25.0" prefWidth="161.0" />
+   </children>
+</AnchorPane>

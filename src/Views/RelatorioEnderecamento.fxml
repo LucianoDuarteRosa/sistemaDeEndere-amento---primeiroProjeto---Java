@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.RelatorioEnderecamentoController">
+   <children>
+      <Button fx:id="btnCancelar" layoutX="482.0" layoutY="14.0" mnemonicParsing="false" onAction="#onCancelar" prefHeight="25.0" prefWidth="78.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCarregar" layoutX="389.0" layoutY="14.0" mnemonicParsing="false" onAction="#onCarregar" prefHeight="25.0" prefWidth="78.0" text="Carregar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comboRelatorio" layoutX="6.0" layoutY="14.0" prefHeight="25.0" prefWidth="369.0" />
+      <TableView fx:id="tbFornecedor" layoutX="6.0" layoutY="54.0" prefHeight="383.0" prefWidth="555.0" visible="false">
+        <columns>
+          <TableColumn fx:id="tcFornecedor" prefWidth="463.0" text="Fornecedor" />
+          <TableColumn fx:id="tcQuantPallet" prefWidth="89.0" text="Quant.Pallets" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tbRuaPredio" layoutX="4.0" layoutY="54.0" prefHeight="383.0" prefWidth="555.0">
+         <columns>
+            <TableColumn fx:id="tcRua" prefWidth="112.0" text="Rua" />
+            <TableColumn fx:id="tcPredio" prefWidth="133.0" text="Prédio" />
+            <TableColumn fx:id="tcPallets" prefWidth="123.0" text="Quant.Pallets" />
+            <TableColumn fx:id="tcVagas" prefWidth="185.0" text="Vagas Disponíveis" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

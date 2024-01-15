@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="1065.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="txtCodInt" layoutX="330.0" layoutY="20.0" prefHeight="25.0" prefWidth="104.0" />
+      <TableView fx:id="tbResult" focusTraversable="false" layoutX="9.0" layoutY="58.0" prefHeight="435.0" prefWidth="615.0">
+        <columns>
+          <TableColumn fx:id="tbCodInt" prefWidth="56.0" text="Código" />
+          <TableColumn fx:id="tbDescricao" prefWidth="242.0" text="Descriçao" />
+            <TableColumn fx:id="tbTon" minWidth="0.0" prefWidth="49.0" text="Ton" />
+            <TableColumn fx:id="tbBitola" prefWidth="41.0" text="Bit" />
+            <TableColumn fx:id="tbRua" prefWidth="41.0" text="Rua" />
+            <TableColumn fx:id="tbPredio" prefWidth="49.0" text="Prédio" />
+            <TableColumn fx:id="tbObservacao" maxWidth="135.0" prefWidth="163.0" text="Observação" />
+            <TableColumn fx:id="tbID" minWidth="0.0" prefWidth="0.0" text="Id" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdicionar" layoutX="62.0" layoutY="508.0" mnemonicParsing="false" onAction="#onAdicionar" prefHeight="25.0" prefWidth="197.0" text="Adicionar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="338.0" layoutY="508.0" mnemonicParsing="false" onAction="#onCancelar" prefHeight="25.0" prefWidth="184.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnConsultar" layoutX="453.0" layoutY="20.0" mnemonicParsing="false" onAction="#onConsultar" prefHeight="25.0" prefWidth="95.0" text="Consultar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="223.0" layoutY="24.0" text="Código Interno:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="24.0" prefHeight="17.0" prefWidth="38.0" text="Lista:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLista" layoutX="94.0" layoutY="24.0" prefHeight="17.0" prefWidth="38.0" />
+      <TableView fx:id="tbResult2" focusTraversable="false" layoutX="631.0" layoutY="57.0" prefHeight="435.0" prefWidth="424.0">
+        <columns>
+          <TableColumn fx:id="tbCodInt2" prefWidth="55.0" text="Código" />
+          <TableColumn fx:id="tbDesc2" prefWidth="215.0" text="Descrição" />
+            <TableColumn fx:id="tbTon2" minWidth="0.0" prefWidth="40.0" text="Ton" />
+            <TableColumn fx:id="tbBit2" minWidth="0.0" prefWidth="36.0" text="Bit" />
+            <TableColumn fx:id="tbObs2" prefWidth="72.0" text="Observação" />
+            <TableColumn fx:id="tbId2" prefWidth="37.0" text="Id" visible="false" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAdd2" layoutX="776.0" layoutY="503.0" mnemonicParsing="false" onAction="#onAdd2" prefHeight="25.0" prefWidth="165.0" text="Adicionar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="716.0" layoutY="22.0" prefHeight="17.0" prefWidth="262.0" text="Lista de resultados no Endereço selecionado">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnConsulta" layoutX="569.0" layoutY="20.0" mnemonicParsing="false" onAction="#onConsulta" prefHeight="25.0" prefWidth="125.0" text="Consultar Desc.">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

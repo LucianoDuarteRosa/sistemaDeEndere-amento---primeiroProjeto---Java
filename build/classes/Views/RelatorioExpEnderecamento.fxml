@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="133.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.RelatorioExpEnderecamentoController">
+   <children>
+      <Label focusTraversable="false" layoutX="6.0" layoutY="26.0" prefHeight="17.0" prefWidth="335.0" text="Digite o caminho que deja salvar o arquivo ou click aqui :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnLocalizar" layoutX="348.0" layoutY="22.0" mnemonicParsing="false" onAction="#onLocalizar" prefHeight="25.0" prefWidth="93.0" text="Localizar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtCaminho" layoutX="21.0" layoutY="65.0" prefHeight="25.0" prefWidth="411.0" />
+      <Button fx:id="btnCancelar" layoutX="304.0" layoutY="99.0" mnemonicParsing="false" onAction="#onCancelar" prefHeight="25.0" prefWidth="75.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExportar" layoutX="92.0" layoutY="99.0" mnemonicParsing="false" onAction="#onExportar" prefHeight="25.0" prefWidth="93.0" text="Exportar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

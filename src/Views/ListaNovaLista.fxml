@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.ListaNovaListaController">
+   <children>
+      <Button fx:id="btnNovaLista" layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#onNovaLista" prefHeight="25.0" prefWidth="116.0" text="Nova Lista">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnListaConsulta" layoutX="167.0" layoutY="58.0" mnemonicParsing="false" onAction="#onListaConsulta" prefHeight="25.0" prefWidth="130.0" text="Consultar Lista">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblDate" focusTraversable="false" layoutX="321.0" layoutY="20.0" prefHeight="17.0" prefWidth="167.0">
+         <graphic>
+            <Label prefHeight="17.0" prefWidth="35.0" text="Data:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </graphic>
+      </Label>
+      <Label fx:id="lblStatus" focusTraversable="false" layoutX="599.0" layoutY="20.0" prefHeight="17.0" prefWidth="110.0">
+         <graphic>
+            <Label prefHeight="17.0" prefWidth="46.0" text="Status:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </graphic></Label>
+      <Label fx:id="lblLista" focusTraversable="false" layoutX="88.0" layoutY="20.0" prefHeight="17.0" prefWidth="85.0">
+         <graphic>
+            <Label prefHeight="17.0" prefWidth="57.0" text="Número:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </graphic>
+      </Label>
+      <TableView fx:id="tbResult" layoutX="11.0" layoutY="93.0" prefHeight="413.0" prefWidth="738.0">
+        <columns>
+          <TableColumn fx:id="tbCodInt" prefWidth="70.0" text="Código" />
+            <TableColumn fx:id="tbDescricao" prefWidth="255.0" text="Descrição" />
+            <TableColumn fx:id="tbCodFab" prefWidth="83.0" text="CodFab" />
+            <TableColumn fx:id="tbTon" prefWidth="49.0" text="Ton" />
+            <TableColumn fx:id="tbBit" prefWidth="44.0" text="Bit" />
+            <TableColumn fx:id="tbRua" prefWidth="43.0" text="Rua" />
+          <TableColumn fx:id="tbPredio" minWidth="5.0" prefWidth="54.0" text="Prédio" />
+            <TableColumn fx:id="tbObservacao" maxWidth="198.0" prefWidth="139.0" text="Observaçao" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnRemProd" disable="true" layoutX="592.0" layoutY="58.0" mnemonicParsing="false" onAction="#onRemProd" prefHeight="25.0" prefWidth="123.0" text="Remover produto">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAddProd" disable="true" layoutX="414.0" layoutY="58.0" mnemonicParsing="false" onAction="#onAddProd" prefHeight="25.0" prefWidth="123.0" text="Adicionar Produto">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="660.0" layoutY="518.0" mnemonicParsing="false" onAction="#onCancelar" prefHeight="25.0" prefWidth="91.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDesfazerFinal" layoutX="161.0" layoutY="518.0" mnemonicParsing="false" onAction="#onDesfazerFinal" prefHeight="25.0" prefWidth="136.0" text="Desfazer Finalização">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnFinal" layoutX="354.0" layoutY="518.0" mnemonicParsing="false" onAction="#onFinalizar" prefHeight="25.0" prefWidth="101.0" text="Finalizar Lista">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnImprimir" layoutX="12.0" layoutY="518.0" mnemonicParsing="false" onAction="#onImprimir" prefHeight="25.0" prefWidth="101.0" text="Imprimir">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExcluir" layoutX="514.0" layoutY="518.0" mnemonicParsing="false" onAction="#onExcluir" prefHeight="25.0" prefWidth="85.0" text="Excluir">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

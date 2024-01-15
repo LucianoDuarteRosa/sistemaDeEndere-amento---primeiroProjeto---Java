@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="138.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.ConfiguracaoController">
+   <children>
+      <TextField fx:id="txtNome" layoutX="128.0" layoutY="21.0" prefHeight="25.0" prefWidth="249.0" />
+      <Button fx:id="btnGravar" layoutX="412.0" layoutY="21.0" mnemonicParsing="false" onAction="#onGravar" prefHeight="25.0" prefWidth="88.0" text="Gravar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtCaminho" layoutX="128.0" layoutY="65.0" prefHeight="25.0" prefWidth="249.0" />
+      <Button fx:id="btnLocalizar" layoutX="412.0" layoutY="65.0" mnemonicParsing="false" onAction="#onLocalizar" prefHeight="25.0" prefWidth="88.0" text="Localizar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label focusTraversable="false" layoutX="10.0" layoutY="25.0" prefHeight="17.0" prefWidth="113.0" text="Nome da empresa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="10.0" layoutY="69.0" prefHeight="17.0" prefWidth="88.0" text="Local da logo">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancelar" layoutX="188.0" layoutY="101.0" mnemonicParsing="false" onAction="#onCancelar" prefHeight="25.0" prefWidth="107.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

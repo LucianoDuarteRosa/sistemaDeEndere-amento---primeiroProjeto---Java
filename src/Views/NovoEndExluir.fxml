@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="110.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.NovoEndExluirController">
+   <children>
+      <ComboBox fx:id="comboRua" layoutX="14.0" layoutY="23.0" onAction="#attPredio" prefWidth="150.0" />
+      <ComboBox fx:id="comboPredio" layoutX="202.0" layoutY="23.0" prefWidth="150.0" />
+      <Button fx:id="btnCancelar" layoutX="236.0" layoutY="74.0" mnemonicParsing="false" onAction="#onCancelar" prefHeight="25.0" prefWidth="82.0" text="Cancelar">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExcluir" layoutX="48.0" layoutY="74.0" mnemonicParsing="false" onAction="#onExcluir" prefHeight="25.0" prefWidth="82.0" text="Excluir">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
